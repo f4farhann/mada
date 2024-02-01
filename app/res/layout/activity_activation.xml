@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.activities.ActivationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlt_messages">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/proceed_confirm"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:text="Dear customer,"
+                style="@style/text_title_new" />
+            <TextView
+                android:text="@string/welcome_eng"
+                style="@style/text_message_new" />
+            <TextView
+                android:text="عزيزي العميل"
+                style="@style/text_title_new" />
+            <TextView
+                android:text="@string/welcome_arabic"
+                style="@style/text_message_new" />
+            <TextView
+                android:text="প্রিয় গ্রাহক,"
+                style="@style/text_title_new" />
+            <TextView
+                android:text="আপনি অালবিলাদ ব্যাংকে নিবন্ধিত ফোন নম্বরটিতে ডিজিটাল পে থেকে এসএমএস এর মাধ্যমে  অ্যাক্টিভেশন কোডটি পাবেন"
+                style="@style/text_message_new" />
+            <TextView
+                android:text="معزز صارف،"
+                style="@style/text_title_new" />
+            <TextView
+                android:text="آپ کو ڈیجیٹل پے سے البیلاد بینک میں رجسٹرڈ فون نمبر پر ایکٹیویشن کوڈ کے ساتھ ایس ایم ایس میسج موصول ہوگا."
+                style="@style/text_message_new" />
+            <TextView
+                android:text="പ്രിയ ഉപഭോക്താവേ,"
+                style="@style/text_title_new" />
+            <TextView
+                android:text="താങ്കൾക് ഡിജിറ്റൽ പേയിൽ നിന്നും ബാങ്ക് അൽ ബിലാദിൽ രജിസ്റ്റർ ചെയ്തിട്ടുള്ള ഫോൺ നമ്പറിലേക്കു ആക്ടിവേഷൻ കോഡ് SMS സന്ദേശമായി ലഭിക്കുന്നതായിരിക്കും"
+                style="@style/text_message_new" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/proceed_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_blue_rounded_img"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/proceed"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/activation_code_bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="@color/txt_color"
+            android:text="ACTIVATION CODE \n رمز التفعيل"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/pin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="9"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView android:id="@+id/pin_1"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_2"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_3"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_4"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_5"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_6"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_7"
+                    style="@style/txt_pin_blue" />
+                <TextView android:id="@+id/pin_8"
+                    style="@style/txt_pin_blue" />
+
+            </LinearLayout>
+            <EditText android:id="@+id/pin_hidden_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:padding="12dp"
+                android:cursorVisible="false"
+                android:maxLength="8"
+                android:textColor="#00000000"
+                android:inputType="numberPassword" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
